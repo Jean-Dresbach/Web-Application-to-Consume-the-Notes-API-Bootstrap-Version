@@ -1,8 +1,8 @@
 const form = document.getElementsByTagName("form")[0]
-const username = document.getElementById("inputUsername")
-const email = document.getElementById("inputEmail")
-const password = document.getElementById("inputPassword")
-const confirmPassword = document.getElementById("inputConfirmPassword")
+const username = document.getElementById("input-username")
+const email = document.getElementById("input-email")
+const password = document.getElementById("input-password")
+const confirmPassword = document.getElementById("input-confirm-password")
 
 form.addEventListener('submit', event => {
     event.preventDefault()
@@ -17,7 +17,6 @@ form.addEventListener('submit', event => {
         signup(newUser)  
     }
 })
-
 
 async function signup(newUser) {
     try {

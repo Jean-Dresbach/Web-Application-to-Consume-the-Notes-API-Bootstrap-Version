@@ -1,6 +1,6 @@
 const form = document.getElementsByTagName("form")[0]
-const email = document.getElementById("inputEmail")
-const password = document.getElementById("inputPassword")
+const email = document.getElementById("input-email")
+const password = document.getElementById("input-password")
 
 form.addEventListener('submit', event => {
     event.preventDefault()
@@ -21,7 +21,7 @@ async function login(user) {
         
         localStorage.setItem("USER", JSON.stringify(USER))
 
-        window.location.replace("/notes-page.html") 
+        window.location.replace("/notes.html") 
 
     } catch (error) {
         showErrorAlert(error)
